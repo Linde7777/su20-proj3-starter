@@ -131,8 +131,8 @@
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="46" y="175">B</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="70" y="165">ALUSel</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="114" y="114">Result</text>
-      <circ-port height="10" pin="1180,240" width="10" x="115" y="105"/>
       <circ-port height="8" pin="200,310" width="8" x="86" y="176"/>
+      <circ-port height="10" pin="1180,240" width="10" x="115" y="105"/>
       <circ-port height="8" pin="200,160" width="8" x="36" y="56"/>
       <circ-port height="8" pin="200,250" width="8" x="36" y="166"/>
       <polygon fill="none" points="40,20 120,70 120,160 40,210 40,130 60,115 40,100" stroke="#000000" stroke-width="2"/>
@@ -190,7 +190,6 @@
     <wire from="(990,1280)" to="(990,1290)"/>
     <wire from="(560,450)" to="(610,450)"/>
     <wire from="(560,610)" to="(610,610)"/>
-    <wire from="(790,2040)" to="(790,2070)"/>
     <wire from="(820,2080)" to="(860,2080)"/>
     <wire from="(220,270)" to="(220,290)"/>
     <wire from="(680,1210)" to="(680,1250)"/>
@@ -256,6 +255,7 @@
     <wire from="(1200,800)" to="(1200,1050)"/>
     <wire from="(610,1420)" to="(640,1420)"/>
     <wire from="(1290,660)" to="(1320,660)"/>
+    <wire from="(720,2020)" to="(790,2020)"/>
     <wire from="(1020,1990)" to="(1050,1990)"/>
     <wire from="(1100,750)" to="(1320,750)"/>
     <wire from="(1300,1960)" to="(1320,1960)"/>
@@ -282,7 +282,6 @@
     <wire from="(600,2070)" to="(710,2070)"/>
     <wire from="(650,1410)" to="(650,1430)"/>
     <wire from="(1080,1280)" to="(1130,1280)"/>
-    <wire from="(770,2040)" to="(790,2040)"/>
     <wire from="(570,1760)" to="(590,1760)"/>
     <wire from="(1050,1290)" to="(1060,1290)"/>
     <wire from="(600,2100)" to="(630,2100)"/>
@@ -387,6 +386,7 @@
     <wire from="(1300,1970)" to="(1300,2010)"/>
     <wire from="(560,230)" to="(570,230)"/>
     <wire from="(1150,2010)" to="(1170,2010)"/>
+    <wire from="(790,2020)" to="(790,2070)"/>
     <comp lib="0" loc="(1180,240)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -1213,9 +1213,6 @@
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(770,2040)" name="Constant">
-      <a name="value" val="0x0"/>
     </comp>
     <comp lib="0" loc="(1280,1940)" name="Constant">
       <a name="value" val="0x0"/>
