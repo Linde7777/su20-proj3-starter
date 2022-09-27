@@ -249,6 +249,7 @@
     <wire from="(230,460)" to="(250,460)"/>
     <wire from="(980,210)" to="(1030,210)"/>
     <wire from="(380,240)" to="(380,310)"/>
+    <wire from="(100,730)" to="(290,730)"/>
     <wire from="(1500,190)" to="(1500,220)"/>
     <wire from="(1320,190)" to="(1320,220)"/>
     <wire from="(590,190)" to="(590,260)"/>
@@ -277,6 +278,7 @@
     <wire from="(240,570)" to="(270,570)"/>
     <wire from="(200,140)" to="(200,240)"/>
     <wire from="(250,530)" to="(270,530)"/>
+    <wire from="(170,660)" to="(320,660)"/>
     <wire from="(200,70)" to="(200,120)"/>
     <wire from="(810,90)" to="(810,210)"/>
     <wire from="(520,170)" to="(600,170)"/>
@@ -490,12 +492,30 @@
     <comp lib="3" loc="(230,460)" name="Adder">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="11" loc="(250,710)" name="imm_gen"/>
-    <comp lib="10" loc="(470,770)" name="branch_comp"/>
-    <comp lib="12" loc="(50,890)" name="control_logic"/>
     <comp lib="6" loc="(973,358)" name="Text">
       <a name="text" val="It is OK to move the PC, RegFile, ALU, MEM, Branch Comp, Imm Gen, and Control Logic to wherever is most convenient for you when constructing your CPU, and to delete this text"/>
       <a name="font" val="SansSerif plain 22"/>
+    </comp>
+    <comp lib="0" loc="(170,660)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="PROGRAM_COUNTER"/>
+    </comp>
+    <comp lib="0" loc="(320,660)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="fetch_addr"/>
+    </comp>
+    <comp lib="12" loc="(40,1050)" name="control_logic"/>
+    <comp lib="10" loc="(500,1000)" name="branch_comp"/>
+    <comp lib="11" loc="(260,930)" name="imm_gen"/>
+    <comp lib="0" loc="(100,730)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="instruction"/>
+    </comp>
+    <comp lib="0" loc="(290,730)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="INSTRUCTION"/>
     </comp>
   </circuit>
 </project>
