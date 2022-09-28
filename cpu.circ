@@ -199,10 +199,8 @@
       <circ-port height="10" pin="270,160" width="10" x="305" y="175"/>
       <circ-anchor facing="east" height="6" width="6" x="307" y="177"/>
     </appear>
-    <wire from="(820,880)" to="(1320,880)"/>
     <wire from="(890,210)" to="(940,210)"/>
     <wire from="(3810,510)" to="(3940,510)"/>
-    <wire from="(1400,880)" to="(1500,880)"/>
     <wire from="(1230,190)" to="(1230,220)"/>
     <wire from="(2360,720)" to="(2510,720)"/>
     <wire from="(1520,210)" to="(1560,210)"/>
@@ -218,6 +216,7 @@
     <wire from="(970,600)" to="(1040,600)"/>
     <wire from="(1340,730)" to="(1550,730)"/>
     <wire from="(3240,640)" to="(3290,640)"/>
+    <wire from="(1750,880)" to="(1850,880)"/>
     <wire from="(1500,190)" to="(1500,220)"/>
     <wire from="(3590,340)" to="(3590,1040)"/>
     <wire from="(590,190)" to="(590,260)"/>
@@ -231,8 +230,8 @@
     <wire from="(1160,210)" to="(1210,210)"/>
     <wire from="(160,470)" to="(190,470)"/>
     <wire from="(800,640)" to="(820,640)"/>
+    <wire from="(820,880)" to="(1670,880)"/>
     <wire from="(1550,680)" to="(1550,730)"/>
-    <wire from="(1360,930)" to="(1360,980)"/>
     <wire from="(250,530)" to="(270,530)"/>
     <wire from="(3100,700)" to="(3100,770)"/>
     <wire from="(810,90)" to="(810,210)"/>
@@ -259,6 +258,7 @@
     <wire from="(230,660)" to="(320,660)"/>
     <wire from="(330,530)" to="(360,530)"/>
     <wire from="(380,310)" to="(590,310)"/>
+    <wire from="(1710,930)" to="(1710,980)"/>
     <wire from="(360,530)" to="(380,530)"/>
     <wire from="(910,520)" to="(910,620)"/>
     <wire from="(1560,90)" to="(1560,210)"/>
@@ -629,11 +629,6 @@
       <a name="width" val="5"/>
       <a name="label" val="rd"/>
     </comp>
-    <comp lib="11" loc="(1400,880)" name="imm_gen"/>
-    <comp lib="0" loc="(1500,880)" name="Tunnel">
-      <a name="width" val="32"/>
-      <a name="label" val="imm_output"/>
-    </comp>
     <comp lib="0" loc="(2360,720)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
@@ -696,5 +691,10 @@
       <a name="label" val="wb_value"/>
     </comp>
     <comp lib="0" loc="(1670,740)" name="Constant"/>
+    <comp lib="11" loc="(1750,880)" name="imm_gen"/>
+    <comp lib="0" loc="(1850,880)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="imm_output"/>
+    </comp>
   </circuit>
 </project>
