@@ -4,49 +4,18 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="incoming" val="32"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
       <a name="appear" val="center"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
     </tool>
     <tool name="Pin">
       <a name="facing" val="north"/>
     </tool>
     <tool name="Probe">
-      <a name="radix" val="10signed"/>
+      <a name="radix" val="16"/>
     </tool>
     <tool name="Tunnel">
-      <a name="width" val="32"/>
+      <a name="width" val="2"/>
     </tool>
     <tool name="Pull Resistor">
       <a name="facing" val="north"/>
@@ -55,7 +24,8 @@
       <a name="facing" val="north"/>
     </tool>
     <tool name="Constant">
-      <a name="value" val="0x0"/>
+      <a name="width" val="8"/>
+      <a name="value" val="0xff"/>
     </tool>
     <tool name="Bit Extender">
       <a name="in_width" val="32"/>
@@ -236,8 +206,10 @@
     <wire from="(890,630)" to="(940,630)"/>
     <wire from="(1400,880)" to="(1500,880)"/>
     <wire from="(1410,190)" to="(1410,220)"/>
+    <wire from="(2590,660)" to="(2610,660)"/>
     <wire from="(190,130)" to="(240,130)"/>
     <wire from="(1230,190)" to="(1230,220)"/>
+    <wire from="(2360,720)" to="(2510,720)"/>
     <wire from="(1520,210)" to="(1560,210)"/>
     <wire from="(1050,190)" to="(1050,220)"/>
     <wire from="(940,560)" to="(1040,560)"/>
@@ -246,6 +218,7 @@
     <wire from="(1430,630)" to="(1480,630)"/>
     <wire from="(1250,210)" to="(1300,210)"/>
     <wire from="(1070,210)" to="(1120,210)"/>
+    <wire from="(2560,730)" to="(2560,850)"/>
     <wire from="(1340,510)" to="(1480,510)"/>
     <wire from="(240,160)" to="(270,160)"/>
     <wire from="(360,430)" to="(360,530)"/>
@@ -277,12 +250,14 @@
     <wire from="(1500,190)" to="(1500,220)"/>
     <wire from="(940,560)" to="(940,630)"/>
     <wire from="(1320,190)" to="(1320,220)"/>
+    <wire from="(2210,350)" to="(2210,970)"/>
     <wire from="(590,190)" to="(590,260)"/>
     <wire from="(200,240)" to="(380,240)"/>
     <wire from="(1140,190)" to="(1140,220)"/>
     <wire from="(620,390)" to="(620,780)"/>
     <wire from="(570,270)" to="(610,270)"/>
     <wire from="(960,190)" to="(960,220)"/>
+    <wire from="(2370,610)" to="(2510,610)"/>
     <wire from="(970,660)" to="(970,690)"/>
     <wire from="(810,210)" to="(850,210)"/>
     <wire from="(1810,520)" to="(1860,520)"/>
@@ -505,10 +480,6 @@
       <a name="text" val="for addi (I format)"/>
       <a name="font" val="SansSerif plain 20"/>
     </comp>
-    <comp lib="9" loc="(2890,640)" name="main">
-      <a name="label" val="DMEM"/>
-      <a name="labelloc" val="south"/>
-    </comp>
     <comp lib="7" loc="(2590,660)" name="alu">
       <a name="label" val="Arithmetic_Logic_Unit"/>
       <a name="labelloc" val="south"/>
@@ -649,6 +620,25 @@
     <comp lib="0" loc="(1500,880)" name="Tunnel">
       <a name="width" val="32"/>
       <a name="label" val="imm_output"/>
+    </comp>
+    <comp lib="0" loc="(2360,720)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="imm_output"/>
+    </comp>
+    <comp lib="0" loc="(2370,610)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="rs1_output"/>
+    </comp>
+    <comp lib="0" loc="(2560,850)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="4"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="9" loc="(3060,670)" name="main">
+      <a name="label" val="DMEM"/>
+      <a name="labelloc" val="south"/>
     </comp>
   </circuit>
 </project>
