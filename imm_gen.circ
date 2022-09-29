@@ -168,8 +168,10 @@
       <circ-anchor facing="east" height="6" width="6" x="117" y="97"/>
     </appear>
     <wire from="(960,380)" to="(960,390)"/>
+    <wire from="(540,400)" to="(540,430)"/>
     <wire from="(470,130)" to="(470,160)"/>
     <wire from="(480,260)" to="(480,290)"/>
+    <wire from="(460,400)" to="(460,430)"/>
     <wire from="(470,230)" to="(570,230)"/>
     <wire from="(470,250)" to="(570,250)"/>
     <wire from="(470,110)" to="(570,110)"/>
@@ -180,15 +182,19 @@
     <wire from="(920,100)" to="(1070,100)"/>
     <wire from="(420,120)" to="(450,120)"/>
     <wire from="(550,260)" to="(570,260)"/>
+    <wire from="(520,430)" to="(540,430)"/>
     <wire from="(920,100)" to="(920,140)"/>
-    <wire from="(590,500)" to="(610,500)"/>
     <wire from="(920,180)" to="(920,220)"/>
     <wire from="(1070,100)" to="(1070,220)"/>
     <wire from="(540,360)" to="(570,360)"/>
+    <wire from="(540,400)" to="(570,400)"/>
     <wire from="(220,100)" to="(220,140)"/>
     <wire from="(470,160)" to="(490,160)"/>
+    <wire from="(590,610)" to="(620,610)"/>
+    <wire from="(460,430)" to="(480,430)"/>
     <wire from="(200,230)" to="(220,230)"/>
     <wire from="(590,120)" to="(660,120)"/>
+    <wire from="(440,380)" to="(570,380)"/>
     <wire from="(220,250)" to="(220,260)"/>
     <wire from="(540,130)" to="(540,160)"/>
     <wire from="(550,260)" to="(550,290)"/>
@@ -202,15 +208,19 @@
     <wire from="(590,250)" to="(610,250)"/>
     <wire from="(1010,340)" to="(1010,380)"/>
     <wire from="(540,130)" to="(570,130)"/>
+    <wire from="(440,400)" to="(460,400)"/>
     <wire from="(70,100)" to="(220,100)"/>
     <wire from="(70,260)" to="(220,260)"/>
     <wire from="(590,380)" to="(620,380)"/>
+    <wire from="(590,500)" to="(620,500)"/>
     <wire from="(1010,380)" to="(1040,380)"/>
     <wire from="(200,160)" to="(220,160)"/>
     <wire from="(470,260)" to="(480,260)"/>
     <wire from="(480,290)" to="(490,290)"/>
     <wire from="(940,340)" to="(1010,340)"/>
     <wire from="(950,380)" to="(960,380)"/>
+    <wire from="(440,370)" to="(570,370)"/>
+    <wire from="(440,390)" to="(570,390)"/>
     <wire from="(960,390)" to="(1040,390)"/>
     <wire from="(530,160)" to="(540,160)"/>
     <comp lib="0" loc="(220,160)" name="Tunnel">
@@ -562,9 +572,53 @@
       <a name="bit30" val="2"/>
       <a name="bit31" val="3"/>
     </comp>
-    <comp lib="0" loc="(610,500)" name="Tunnel">
+    <comp lib="0" loc="(620,500)" name="Tunnel">
       <a name="width" val="32"/>
       <a name="label" val="U_format"/>
+    </comp>
+    <comp lib="0" loc="(620,610)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="UJ_format"/>
+    </comp>
+    <comp lib="0" loc="(420,380)" name="Splitter">
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="32"/>
+      <a name="appear" val="center"/>
+      <a name="bit1" val="none"/>
+      <a name="bit2" val="none"/>
+      <a name="bit3" val="none"/>
+      <a name="bit4" val="none"/>
+      <a name="bit5" val="none"/>
+      <a name="bit6" val="none"/>
+      <a name="bit7" val="3"/>
+      <a name="bit8" val="1"/>
+      <a name="bit9" val="1"/>
+      <a name="bit10" val="1"/>
+      <a name="bit11" val="1"/>
+      <a name="bit12" val="none"/>
+      <a name="bit13" val="none"/>
+      <a name="bit14" val="none"/>
+      <a name="bit15" val="none"/>
+      <a name="bit16" val="none"/>
+      <a name="bit17" val="none"/>
+      <a name="bit18" val="none"/>
+      <a name="bit19" val="none"/>
+      <a name="bit20" val="none"/>
+      <a name="bit21" val="none"/>
+      <a name="bit22" val="none"/>
+      <a name="bit23" val="none"/>
+      <a name="bit24" val="none"/>
+      <a name="bit25" val="2"/>
+      <a name="bit26" val="2"/>
+      <a name="bit27" val="2"/>
+      <a name="bit28" val="2"/>
+      <a name="bit29" val="2"/>
+      <a name="bit30" val="2"/>
+      <a name="bit31" val="4"/>
+    </comp>
+    <comp lib="0" loc="(520,430)" name="Bit Extender">
+      <a name="in_width" val="1"/>
+      <a name="out_width" val="20"/>
     </comp>
   </circuit>
 </project>
