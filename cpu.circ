@@ -1025,13 +1025,13 @@
       <a name="facing" val="east"/>
       <a name="label" val="clk"/>
     </comp>
-    <comp lib="6" loc="(690,762)" name="Text">
-      <a name="text" val="nop"/>
-      <a name="font" val="SansSerif plain 20"/>
-    </comp>
     <comp lib="0" loc="(710,810)" name="Constant">
       <a name="width" val="32"/>
       <a name="value" val="0x13"/>
+    </comp>
+    <comp lib="6" loc="(675,788)" name="Text">
+      <a name="text" val="nop"/>
+      <a name="font" val="SansSerif plain 20"/>
     </comp>
   </circuit>
 </project>
