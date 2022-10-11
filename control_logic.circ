@@ -137,10 +137,10 @@
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="1132" y="49">ASel</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="1182" y="49">BSel</text>
       <circ-port height="10" pin="670,210" width="10" x="1165" y="25"/>
-      <circ-port height="10" pin="620,210" width="10" x="1115" y="25"/>
       <circ-port height="10" pin="570,210" width="10" x="925" y="25"/>
-      <circ-port height="10" pin="500,210" width="10" x="575" y="25"/>
       <circ-port height="10" pin="420,210" width="10" x="495" y="25"/>
+      <circ-port height="10" pin="500,210" width="10" x="575" y="25"/>
+      <circ-port height="10" pin="620,210" width="10" x="1115" y="25"/>
       <circ-port height="10" pin="350,210" width="10" x="55" y="25"/>
       <circ-port height="8" pin="250,210" width="8" x="1006" y="26"/>
       <circ-port height="8" pin="200,210" width="8" x="966" y="26"/>
@@ -521,12 +521,12 @@
     <wire from="(2840,390)" to="(2880,390)"/>
     <wire from="(1900,800)" to="(1900,840)"/>
     <wire from="(1780,620)" to="(1810,620)"/>
+    <wire from="(1800,1440)" to="(1830,1440)"/>
     <wire from="(1780,300)" to="(1810,300)"/>
     <wire from="(1780,940)" to="(1810,940)"/>
     <wire from="(1810,490)" to="(1840,490)"/>
-    <wire from="(1800,1120)" to="(1830,1120)"/>
     <wire from="(1810,330)" to="(1840,330)"/>
-    <wire from="(1800,1440)" to="(1830,1440)"/>
+    <wire from="(1800,1120)" to="(1830,1120)"/>
     <wire from="(2260,450)" to="(2300,450)"/>
     <wire from="(4450,790)" to="(4450,910)"/>
     <wire from="(3740,470)" to="(3800,470)"/>
