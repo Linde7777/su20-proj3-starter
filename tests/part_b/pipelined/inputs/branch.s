@@ -6,7 +6,7 @@ bad-loop:
 start:
 	addi s1 s1 10#3
 	blt s0 s1 label1#4
-	beq x0 x0 bad-loop#5
+	beq x0 x0 bad-loop#5   pc==0x14
 
 label2: 
 	addi s1 s1 -20#6
