@@ -879,10 +879,6 @@
       <a name="width" val="32"/>
       <a name="label" val="rs2_output"/>
     </comp>
-    <comp lib="6" loc="(3621,561)" name="Text">
-      <a name="text" val="TODO: if func3 is 0, igonre 1 bit"/>
-      <a name="font" val="SansSerif plain 20"/>
-    </comp>
     <comp lib="0" loc="(4260,650)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
