@@ -1,1 +1,1 @@
-UCB CS61C Summer 2020 project
+UC Berkely CS61C Summer 2020 project
